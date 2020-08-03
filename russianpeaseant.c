@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 // A method to multiply two numbers using Russian Peasant method 
-long long unsigned int russianPeasant(long long unsigned int a, long long unsigned int b) 
+unsigned long long int russianPeasant(unsigned long long int a, unsigned long long int b) 
 { 
-	long long unsigned int res = 0; // initialize result 
-
+	unsigned long long int res = 0; 
 	// While second number doesn't become 1 
 	while (b > 0) 
 	{ 
@@ -22,12 +21,12 @@ long long unsigned int russianPeasant(long long unsigned int a, long long unsign
 // Driver program to test above function 
 int main() 
 { 
-    long long unsigned int x,y;
+    unsigned long long int x,y;
     printf("%s","Enrer num1: ");
-    scanf("%lld", &x);
+    scanf("%llu", &x);
     printf("%s","Enrer num1: ");
-    scanf("%lld", &y);
-    printf("%lld",russianPeasant(x,y));
-    printf("\n%lld",x+1);
+    scanf("%llu", &y);
+    printf("%llu",russianPeasant(x,y));
+    printf("\n%llu",x+1);
     return 0; 
 } 
